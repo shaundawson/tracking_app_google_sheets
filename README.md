@@ -1,4 +1,4 @@
-# tracking_app_google_sheets
+# Workout Tracking App
  A workout tacking app using Python and Google Sheets
 
 See tracking app here: 
