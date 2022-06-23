@@ -1,7 +1,8 @@
-from keys import NTX_APP_ID, NTX_API_KEY, SHEETY_USERNAME, SHEETY_PROJECT, SHEETY_SHEETNAME,BEARER
+from keys import NTX_APP_ID, NTX_API_KEY, SHEET_USERNAME, SHEET_PROJECT, SHEET_SHEETNAME,BEARER
 from http.client import responses
 import requests
 from datetime import datetime as dt
+
 
 GENDER = 'female'
 WEIGHT_KG = 72.5
@@ -9,9 +10,9 @@ HEIGHT_CM = 164.59
 AGE = 39
 
 nutritionix_endpoint = 'https://trackapi.nutritionix.com/v2/natural/exercise'
-sheet_endpoint = f'https://api.sheety.co/{SHEETY_USERNAME}/{SHEETY_PROJECT}/{SHEETY_SHEETNAME}'
+sheet_endpoint = f'https://api.sheety.co/{SHEET_USERNAME}/{SHEET_PROJECT}/{SHEET_SHEETNAME}'
 
-exercise_text = input("Tell me which exercises you did: ")
+exercise_text = input('Tell me which exercises you did. \nFor example, "I cycled for 30 minutes":  ')
 
 ntx_headers = {
     'x-app-id': NTX_APP_ID,
