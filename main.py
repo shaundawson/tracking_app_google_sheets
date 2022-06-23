@@ -28,7 +28,7 @@ exercise_parameters = {
 
 response = requests.post(url=nutritionix_endpoint,json=exercise_parameters,headers=ntx_headers)
 result = response.json()
-print(result)
+# print(result)
 
 
 today= dt.now()
@@ -53,7 +53,7 @@ for exercise in result["exercises"]:
 
 # #POST
 sheet_response = requests.post(url=sheet_endpoint, json=sheet_inputs, headers=sheet_headers)
-sheet_data = sheet_response.json()
+print(sheet_response.text)
 
 
 
